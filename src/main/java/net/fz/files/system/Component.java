@@ -9,5 +9,13 @@ public abstract class Component {
         this.level = 0;
     }
     public abstract void print();
+
+    protected String tabs(){
+        String tabs = "";
+        for(int i=0;i<level;i++){
+            tabs += "\t";
+        }
+        return tabs;
+    }
 }
 
